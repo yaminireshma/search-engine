@@ -1,0 +1,320 @@
+.tabs {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.historyWrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width:431px){
+    gap:20px
+  }
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width:431px){
+    gap:15px
+  }
+}
+
+.link {
+  color: #6f10a2;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  @media screen and (max-width:431px){
+    font-size:15px;
+    font-weight:600;
+    line-height: 20px;
+    padding-top:8px
+  }
+}
+
+.header {
+  color: #6f10a2;
+  text-decoration: none;
+  padding: 15px;
+  font-size:20px;
+
+  @media screen and (max-width:431px){
+    font-size:15px;
+  }
+
+}
+
+.homeStyle,
+.lastSearchStyle,
+.historyStyle {
+  color: #6f10a2;
+  background-color: white;
+  padding: 15px;
+  border-radius: 2em;
+  position: relative; 
+  
+  @media screen and (max-width: 431px) {
+    background-color: white;
+    padding: 10px;
+    border-radius: 1em;
+
+  }
+  
+}
+
+
+.home:hover,
+.lastSearch:hover,
+.history:hover {
+  cursor: pointer;
+}
+
+.homeWrapper {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  gap:30px
+}
+
+.homeSearch {
+  width: 450px;
+  height: 38px;
+  border-radius: 0.5em;
+  padding: 10px 10px 10px 15px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+
+  @media screen and (max-width:431px){
+    width:280px;
+    height:30px
+  }
+
+}
+
+input:focus {
+  outline: auto;
+  outline-color: #6f10a2;
+}
+
+.searchButton {
+  border-radius: 0.5em;
+  background-color: #6f10a2;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  width: 100px;
+  cursor:pointer;
+
+  @media screen and (max-width:431px){
+    width:80px;
+    height:40px;
+    font-weight: 500;
+    font-size: 16px;
+
+  }
+
+}
+
+.homeContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  @media screen and (max-width:431px){
+    flex-direction: column;
+  }
+}
+
+.disable {
+  cursor: not-allowed
+}
+
+.section {
+  width: 700px;
+  height: 70px;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 40px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 431px) {
+    width: 320px;
+    height:40px;
+    border-radius: 10px;
+    padding:0px 0px 0px 20px;
+
+  }
+}
+
+.historyContainers {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 500px;
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: center;
+
+  @media screen and (max-width:431px){
+    gap:20px;
+    flex-basis:300px
+  }
+
+}
+
+.buttons {
+  margin-right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  min-width: 40px;
+  min-width: 100px;
+  height: 50px;
+  background-color: #6f10a2;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  cursor:pointer
+
+}
+
+.heading {
+  font-size: 30px;
+  color: #6f10a2;
+  font-weight: 1000;
+
+  @media screen and (max-width:431px){
+    font-size:20px
+  }
+}
+
+.pageButton {
+  border-color: #6f10a2 !important;
+  color: #6f10a2;
+  outline: none;
+
+  @media screen and (max-width:431px){
+    border:1.5px solid  #6f10a2 !important
+  }
+}
+
+.pageButtons {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: #6f10a2;
+  outline: none;
+  border-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+
+  @media screen and (max-width:431px){
+    width:30px;
+    height:30px;
+    border-radius:5px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+}
+
+.pageButtons.borderHover:hover {
+  border: 2px solid #6f10a2;
+
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.directionButtons {
+  background-color: #6f10a2;
+  color: white
+}
+
+.disable {
+  cursor: not-allowed
+}
+
+.pagination_DeleteHistory {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  @media screen and (max-width:431px){
+    flex-direction: column;
+    gap:15px
+  }
+}
+
+.deleteAll {
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 4px 4px rgba(184, 172, 172, 0.943);
+  background-color: white;
+  outline: none;
+  border-color: transparent;
+  color: #6f10a2;
+  font-weight: 700;
+  cursor: pointer;
+
+  @media screen and (max-width:431px){
+    width: 200px;
+  }
+}
+
+.deleteMob{
+  @media screen and (max-width:431px){
+    display:flex;
+    justify-content: center;
+  }
+}
+
+.deleteAll:hover {
+  border-color: #6f10a2 !important;
+}
+
+.noData {
+  display:flex;
+  justify-content: center;
+  color: #6f10a2;
+  margin-top:30px;
+
+  @media screen and (max-width:431px){
+    font-size:20px;
+  }
+
+}
+
+.pageCount {
+  padding-top: 10px;
+  font-weight: 700;
+  color: #6f10a2;
+
+  @media screen and (max-width:431px){
+    display:flex;
+    justify-content: center;
+  }
+}
+
+.iconEdit{
+  margin:12px 0px 
+}
